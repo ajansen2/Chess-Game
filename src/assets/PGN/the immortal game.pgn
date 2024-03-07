@@ -1,0 +1,126 @@
+[Event "London"]
+[Site "London ENG"]
+[Date "1851.06.21"]
+[Round "?"]
+[White "Adolf Anderssen"]
+[Black "Lionel Adalbert Bagration Felix Kieseritzky"]
+[Result "1-0"]
+[EventDate "?"]
+[ECO "C33"]
+[WhiteElo "?"]
+[BlackElo "?"]
+[PlyCount "45"]
+
+1. e4 {In the romantic era of chess, e4 was almost the only move played.} 1...
+e5 {Black responds in kind.} 2. f4 {The \"King's Gambit\" - the MOST aggressive
+option at White's disposal. White sacrifices the f4-pawn to attempt to establish
+a pawn duo with d4 and e4.} 2... exf4 {\"The best way to refute a gambit is to
+accept it.\"} 3. Bc4 {The Bishop's Gambit. This slightly less popular option
+invites Black to check on h4 and make White move the king.} (3. d4 $2 {[%c_effect
+d4;square;d4;type;Mistake;persistent;true] This is too hasty.} 3... Qh4+ 4. Ke2
+d5 $1 $17 {[%c_effect d5;square;d5;type;GreatFind;persistent;true]}) 3... Qh4+ $6
+{[%c_effect h4;square;h4;type;Inaccuracy;persistent;true] As it turns out, this
+check displaces the king, but it doesn't mind being on f1. Meanwhile, Black's
+queen is a bit exposed, and Nf3 will gain time by attacking the queen.} (3...
+Nf6 {Just developing and poking at e4 is very sensible.} 4. e5 $2 {[%c_effect
+e5;square;e5;type;Mistake;persistent;true]} 4... d5 $1 $17 {[%c_effect
+d5;square;d5;type;GreatFind;persistent;true]}) 4. Kf1 {White can no longer
+castle, but the king is safe and out of the way on f1.} 4... b5 $6 {[%c_effect
+b5;square;b5;type;Inaccuracy;persistent;true] This is the right idea, but the
+wrong execution. Black gives back a pawn and may free the bishop on c8, but
+White's bishop on b5 is well-placed, and the bishop on c8 doesn't actually gain
+a good diagonal.} (4... d5 $1 {[%c_effect
+d5;square;d5;type;GreatFind;persistent;true] This is a much more sensible way to
+give back a pawn. Black will open lines to White's king and give the bishop a
+good diagonal.}) 5. Bxb5 {Free pawns should be captured.} 5... Nf6 {The knight
+attacks e4 AND considers hopping onto pleasant squares of h5 or g4.} 6. Nf3
+{White gains time by developing and attacking the queen.} 6... Qh6 {From this
+square, the queen defends the f4-pawn. In general, if White can win it back,
+White will have a large advantage.} 7. d3 $6 {[%c_effect
+d3;square;d3;type;Inaccuracy;persistent;true] This is a bit conservative. White
+defends the e4-pawn, but the pawn isn't in real danger.} (7. d4 $1 {[%c_effect
+d4;square;d4;type;GreatFind;persistent;true] This is clearly stronger because
+the e4-pawn is poisoned.} 7... Nxe4 $2 {[%c_effect
+e4;square;e4;type;Mistake;persistent;true]} 8. Qe2 {pinning the knight.} 8... f5
+9. Nc3 Bb7 10. d5 $1 $16 {[%c_effect d5;square;d5;type;GreatFind;persistent;true]})
+7... Nh5 {Black threatens to win an exchange with ...Ng3+.} 8. Nh4 $2 {[%c_effect
+h4;square;h4;type;Mistake;persistent;true] Anderssen wants to put the knight on
+f5, but it will not be very good there.} (8. Rg1 $1 $16 {[%c_effect
+g1;square;g1;type;GreatFind;persistent;true] This move (avoiding ...Ng3+) is
+actually very strong as White intends g4 $1 when the knight on h5 has nowhere good
+to go.}) 8... Qg5 $1 {[%c_effect g5;square;g5;type;GreatFind;persistent;true] The
+knight AND the bishop on b5 are attacked.} 9. Nf5 {This is the ONLY move to save
+both the knight on h4 and the bishop on b5.} 9... c6 {This pushes the bishop
+back, and it controls d5, BUT it takes away some of the fifth-rank pressure that
+was creating real issues for White.} (9... g6 $1 {[%c_effect
+g6;square;g6;type;GreatFind;persistent;true]} 10. h4 $1 {[%c_effect
+h4;square;h4;type;GreatFind;persistent;true]} 10... Qf6 $17) 10. g4 $5 {[%c_effect
+g4;square;g4;type;Interesting;persistent;true] A clever move $1 The knight on h5
+and the queen are in real trouble, and of course, the pawn cannot be captured en
+passant because the queen on g5 will hang.} (10. Ba4 $1 $14 {[%c_effect
+a4;square;a4;type;GreatFind;persistent;true]}) (10. Bc4 $2 {[%c_effect
+c4;square;c4;type;Mistake;persistent;true]} 10... d5 $1 $17 {[%c_effect
+d5;square;d5;type;GreatFind;persistent;true]}) 10... Nf6 {The knight retreats
+and attacks g4. White's bishop on b5 and pawn on g4 are both hanging now.}
+(10... g6 $1 {[%c_effect g6;square;g6;type;GreatFind;persistent;true]} 11. gxh5
+gxf5 12. Rg1 $17) (10... fxg3 $4 {[%c_effect
+g3;square;g3;type;Blunder;persistent;true]} 11. Bxg5 $18) 11. Rg1 {The bishop on
+b5 is left hanging, BUT the threat of pawn to h4 is too strong, and Black should
+not capture.} 11... cxb5 $2 {[%c_effect b5;square;b5;type;Mistake;persistent;true]
+Black cracks under the pressure. This capture gives White the time needed to go
+after the black queen.} (11... h5 $1 $13 {[%c_effect
+h5;square;h5;type;GreatFind;persistent;true]}) (11... d5 $5 $13 {[%c_effect
+d5;square;d5;type;Interesting;persistent;true]}) 12. h4 {Where is the queen to
+go $2} 12... Qg6 {This is the only square not under immediate attack.} 13. h5 {The
+queen is hit again.} 13... Qg5 {Again, the queen has only one safe square.} 14.
+Qf3 {Now Anderssen simply wishes to take the pawn on f4 with Bxf4 and trap the
+queen.} 14... Ng8 {The knight makes a sad retreat so that the queen can retreat
+along the d8-h4 diagonal.} 15. Bxf4 {The pawn is taken and the black queen
+attacked.} 15... Qf6 {The queen pulls back and attacks the b2-pawn. Note that
+Black HAS avoided getting his queen trapped, and he has won the bishop on b5.
+However, White has a winning advantage because of his extremely active pieces
+and many threats.} 16. Nc3 {The final minor piece is developed, and the b2-pawn
+is no longer in danger. The knight is immediately threatening to go to d5.}
+16... Bc5 {Black starts the process of developing his minor pieces all over
+again. The bishop hopes to gain time by attacking the rook on g1.} 17. Nd5 $1
+{[%c_effect d5;square;d5;type;GreatFind;persistent;true] A brilliant move.
+Anderssen sacrifices the b2-pawn to swarm the black king with the minor pieces.}
+17... Qxb2 {There is now no better option than taking the pawn and threatening
+the rook on a1.} 18. Bd6 $6 {[%c_effect
+d6;square;d6;type;Inaccuracy;persistent;true] This move - sacrificing both rooks
+- is incredibly thrilling. Without this move, the game might not be famous at
+all. However, it is not the best move. White did not have to sacrifice both
+rooks to attack.} (18. Re1 {Simply saving this rook is enough to win with the
+active minor pieces.} 18... Bxg1 19. Nd6+ Kf8 20. Be5 $18 {The queen and
+checkmate on f7 are threatened.}) 18... Bxg1 $2 {[%c_effect
+g1;square;g1;type;Mistake;persistent;true] Incredibly, this move loses. The key
+is to take one rook, but not both.} (18... Qxa1+ $1 {[%c_effect
+a1;square;a1;type;GreatFind;persistent;true]} 19. Ke2 Qb2 $1 $19 {[%c_effect
+b2;square;b2;type;GreatFind;persistent;true]}) 19. e5 $5 {[%c_effect
+e5;square;e5;type;Interesting;persistent;true] Like Bd6 $6, this move is
+spectacular, but it is probably not best. The main point of this move is to cut
+the black queen off from the defense of the g7-pawn. Nxg7+ is a checkmating
+threat.} (19. Re1 $16 {Saving the rook still leaves White with a tremendous attack
+despite the fact that he is down a rook and minor piece right now.}) 19...
+Qxa1+ $1 {[%c_effect a1;square;a1;type;GreatFind;persistent;true] The second rook
+is captured.} (19... Bb7 $2 {[%c_effect
+b7;square;b7;type;Mistake;persistent;true]} 20. Nxg7+ Kd8 21. Qxf7 $18) 20. Ke2
+{The king is best tucked away here. Black cannot attack him.} 20... Na6 $2
+{[%c_effect a6;square;a6;type;Mistake;persistent;true] The fatal error. Black
+has just one incredibly hard to spot defense.} (20... Ba6 $1 {[%c_effect
+a6;square;a6;type;GreatFind;keyPressed;undefined;persistent;true] This move,
+freeing the c8-square for the king, is simply the only move that doesn't get
+brutally mated or lose all of Black's pieces.} 21. Nc7+ Kd8 22. Nxa6 (22. Nxa8
+Kc8 $19) (22. Qxa8 Bc8 $3 {[%c_effect
+c8;square;c8;type;Brilliant;persistent;true]} 23. Qxb8 Qc3 $1 $12 {[%c_effect
+c3;square;c3;type;GreatFind;persistent;true]}) 22... Qc3 (22... Qxa2 23. Bc7+
+Kc8 (23... Ke8 24. Nb4 $18) 24. Nd6#) 23. Bc7+ Qxc7 24. Nxc7 $18) 21. Nxg7+ {White
+wins a pawn and forces the king to d8. The dark squares were already exposed,
+but now they are completely open for White's attack.} 21... Kd8 {Forced.} 22.
+Qf6+ $3 {[%c_effect f6;square;f6;type;Brilliant;persistent;true] Fantastic $1
+Anderssen spots one of the prettiest and most unique checkmates in the history
+of the royal game.} (22. Qxf7 {This mates slightly more slowly.}) 22... Nxf6
+{The only (silly) alternative is ...Ne7.} 23. Be7# {A finish clearly worthy of a
+masterpiece known as \"THE Immortal Game.\" White has sacrificed one bishop,
+many pawns, both rooks, and the queen for a stunning mate with the remaining
+minor pieces.} 1-0

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Chess" default="run" basedir="." xmlns:if="ant:if" xmlns:unless="ant:unless">
+
+	<property name="verbose.output" value="false" />
+
+	<property name="build.dir" location="build" />
+	<property name="dist.dir" location="dist" />
+	<property name="classes.dir" location="${build.dir}/classes" />
+	<property name="jar.dir" location="${dist.dir}" />
+	<property name="src.dir" location="src" />
+	<property name="assets.dir" location="${src.dir}/assets"/>
+	<property name="doc.dir" location="doc" />
+	<property name="testdoc.dir" location="test_doc" />
+	<property name="test.classes.dir" location="build/tests" />
+	<property name="test.dir" location="test" />
+	<property name="report.dir" location="report" />
+	<property name="out.dir" location="out" />
+
+	<property name="Main-Class" value="edu.kingsu.SoftwareEngineering.Chess.Main"/>
+	<property name="icon.path" value="${src.dir}/assets/img/icon.jpg"/>
+	<property name="jar.name" value="${ant.project.name}"/>
+	<property name="jar.file" value="${jar.dir}/${jar.name}.jar"/>
+
+	<path id="classpath.base">
+		<pathelement location="${classes.dir}"/>
+	</path>
+
+	<path id="classpath.test">
+		<pathelement location="${user.home}/.ant/lib/ant-junit.jar"/>
+		<pathelement location="${user.home}/.ant/lib/junit.jar"/>
+		<pathelement location="${test.classes.dir}"/>
+		<path refid="classpath.base"/>
+	</path>
+	
+	<path id="classpath">
+		<pathelement location="${user.home}/.ant/lib/flatlaf.jar"/>
+	</path>
+
+	<available classname="org.junit.runner.Runner" property="junit.installed"/>
+	<available classname="org.hamcrest.SelfDescribing" property="hamcrest.installed"/>
+	<available classname="com.formdev.flatlaf.FlatDarkLaf" property="flatlaf.installed"/>
+
+	<condition property="libs.installed">
+		<and>
+			<isset property="junit.installed"/>
+			<isset property="hamcrest.installed"/>
+			<isset property="flatlaf.installed"/>
+		</and>
+	</condition>
+
+	<target name="init" depends="install-junit" description="Create directories and install libraries">
+		<mkdir dir="${src.dir}" />
+		<mkdir dir="${assets.dir}" />
+		<mkdir dir="${classes.dir}" />
+		<mkdir dir="${dist.dir}" />
+		<mkdir dir="${report.dir}" />
+		<mkdir dir="${test.classes.dir}" />
+		<mkdir dir="${testdoc.dir}"/>
+	</target>
+
+	<target name="install-junit" unless="libs.installed" >
+		<mkdir dir="${user.home}/.ant/lib"/>
+		<get dest="${user.home}/.ant/lib/hamcrest-core.jar" src="http://search.maven.org/remotecontent?filepath=org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar" unless:set="hamcrest.installed"/>
+		<get dest="${user.home}/.ant/lib/ant-junit.jar" src="http://search.maven.org/remotecontent?filepath=org/apache/ant/ant-junit/1.9.6/ant-junit-1.9.6.jar" unless:set="junit.installed"/>
+		<get dest="${user.home}/.ant/lib/junit.jar" src="http://search.maven.org/remotecontent?filepath=junit/junit/4.12/junit-4.12.jar" unless:set="junit.installed"/>
+		<get dest="${user.home}/.ant/lib/flatlaf.jar" src="https://repo1.maven.org/maven2/com/formdev/flatlaf/3.2.5/flatlaf-3.2.5.jar" unless:set="flatlaf.installed"/>
+		<fail message="Required Libraries installed. Please run the build again"/>
+	</target>
+
+	<target name="clean" description="Clean the project (Removes build files and docs)">
+		<delete dir="${build.dir}"/>
+		<delete dir="${dist.dir}"/>
+		<delete dir="${doc.dir}"/>
+		<delete dir="${testdoc.dir}"/>
+		<delete dir="${report.dir}"/>
+		<delete dir="${out.dir}"/>
+	</target>
+
+	<target name="compile" depends="clean,init" description="Compile the code into classes">
+		<mkdir dir="${classes.dir}"/>
+		<javac  release="17"
+				target="17"
+				source="17"
+				debug="true"
+				debuglevel="lines,vars,source"
+				srcdir="${src.dir}"
+				destdir="${classes.dir}"
+				verbose="${verbose.output}"
+				includeantruntime="false">
+				<classpath refid="classpath"/>
+		</javac>
+	</target>
+
+	<target name="jar" depends="compile" description="Bundle application into a distributable JAR file">
+		<mkdir dir="${jar.dir}"/>
+		<jar destfile="${jar.file}" basedir="${classes.dir}">
+			<fileset dir="${assets.dir}"/>
+			<manifest>
+				<attribute name="Main-Class" value="${Main-Class}"/>
+				<!--help me-->
+				<attribute name="Icon-Path" value="${icon.path}"/>
+			</manifest>
+			<zipfileset includes="**/*.*" src="${user.home}/.ant/lib/flatlaf.jar"/>
+		</jar>
+	</target>
+
+	<target name="run" depends="jar" description="Run the application">
+		<java jar="${jar.file}" fork="true">
+			<arg line="${args}"/>
+		</java>
+	</target>
+
+	<target name="run-debug" depends="jar" description="Run the application in debug mode">
+		<java jar="${jar.file}" fork="true">
+			<arg value="DEBUG"/>
+		</java>
+	</target>
+	<target name="javadoc" description="Create the JavaDoc API">
+		<javadoc
+				packagenames="edu.kingsu.SoftwareEngineering.*"
+				sourcepath="${src.dir}"
+				destdir="${doc.dir}"
+				author="true"
+				version="true"
+				windowTitle="${ant.project.name}"
+				private="true"
+				linksource="yes">
+			<bottom><![CDATA[<i>Copyright &#169; Group 4 (Adam Jansen, Aditya Aggarwal, Christopher Bury, Dalton Herrewynen, Hamza Mhamdi). All Rights Reserved.</i>]]></bottom>
+		</javadoc>
+	</target>
+	<target name="junit-javadoc" description="Create the JavaDoc API for unit tests">
+		<javadoc
+				packagenames="edu.kingsu.SoftwareEngineering.*"
+				classpathref="classpath.test"
+				sourcepath="${test.dir}"
+				destdir="${testdoc.dir}"
+				author="true"
+				version="true"
+				windowTitle="${ant.project.name} Unit Tests"
+				private="true"
+				linksource="yes">
+			<bottom><![CDATA[<i>Copyright &#169; Group 4's Junit author (Dalton Herrewynen). All Rights Reserved.</i>]]></bottom>
+		</javadoc>
+	</target>
+	<target name="clean-tests">
+		<delete dir="${test.classes.dir}"/>
+	</target>
+
+	<target name="compile-test" depends="compile">
+		<javac srcdir="${test.dir}" destdir="${test.classes.dir}" verbose="${verbose.output}" includeantruntime="false" debug="on">
+			<classpath refid="classpath.test"/>
+		</javac>
+	</target>
+
+	<target name="run-tests" depends="compile-test">
+		<junit printsummary="no" haltonfailure="no">
+			<classpath refid="classpath.test" />
+			<batchtest todir="${report.dir}">
+				<fileset dir="${test.classes.dir}">
+					<include name="**/*Test*" />
+				</fileset>
+			</batchtest>
+			<formatter type="xml" />
+			<formatter type="brief" usefile="false"/>
+		</junit>
+	</target>
+
+	<target name="test" depends="clean,run-tests" description="Generate Test Report">
+		<junitreport todir="${report.dir}">
+			<fileset dir="${report.dir}">
+				<include name="TEST-*.xml"/>
+			</fileset>
+			<report format="frames" todir="${report.dir}/html"/>
+		</junitreport>
+		<delete>
+			<fileset dir="${report.dir}" includes="TEST*.xml"/>
+		</delete>
+	</target>
+
+</project>
+

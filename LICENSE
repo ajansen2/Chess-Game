@@ -1,0 +1,113 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+License and Copyright notice protected by GPG signature
+Key: 4286 416E BE05 D2BC 8AB7 779E A259 1A04 9940 2316
+
+Chess game project copyright notice and license.
+
+Copyright (C) 2023 Members of Group 4: Adam Jansen, Aditya Aggarwal,
+Christopher Bury, Dalton Herrewynen, and Hamza Mhamdi. All Rights Reserved.
+
+I, Dalton Herrewynen, write this file on behalf of my group members.
+
+Each group member retains full ownership to the code he wrote. History and
+authorship is trivial to verify via the Git version control repository. All of
+my commits are signed with one of my GPG keys (find them listed in Authors.md).
+My signatures are indirectly protecting the security of the other Git commits
+which are not signed, though their security is still not as strong as the ones
+I have signed.
+
+License is granted to all group members as noted in the Authors.md file for
+display, running, compiling, and modification for use in their future projects.
+
+The primary reason I write this is because some of my code solutions were
+borrowed from other projects I am working on personally. I do not wish to grant
+ownership to anyone of any code that I have written.
+
+Because this is a school project, I do grant a license to The Kings University
+and its staff and faculty to use, display run, compile into executable files,
+and demonstrate my code. I do not grant them ownership of any work that I have
+done here. I retain the sole ownership of any work I do. I understand that
+The Kings University requires certain rights in order to grade the project, I
+allow this usage. However, I retain the full ownership and authorship of my
+work and anything I derive from it.
+
+Unless specified otherwise, the other members of Group 4 affirm their ownership
+and authorship over their own work, grant license rights to the other Group 4
+members, and to The Kings University and its faculty exactly as I have.
+
+The other group members can choose to affirm my statement as their own at next
+to my own signature at the bottom of this file.
+
+License is hereby granted to The Kings University to store, compile, run, and
+display this project and its work for grading and educational purposes.
+Ownership and authorship is held by the physical person who created any given
+work. For authenticity, my GPG signature should be sufficient to prove the Git
+history is intact given no one has access to my GPG keys, and it is unlikely
+that someone has been maliciously submitting Git commits pretending to be
+someone else.
+
+Signatures below license are only valid if license text digital signature is
+valid.
+
+Unique random signature phrase (to bind the assent signature to this text and
+its integrity signature).
+
+The following phrase must match with the phrase in the signature
+Phrase: {Swam Rent Credit Optic Mars This}
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQSGQFME1FfMhiuohqKZOAl4Ij9XsQUCZWknQwAKCRCZOAl4Ij9X
+sdb0AQDS/VTNzWkfYyk1MtgUAhbBhluFKsxNetXmj7+dBQy7eAD+O1hBp+c70RC4
+CCK7x+Yf3oMvozttBAmecAxZzNl3uwE=
+=9vEP
+-----END PGP SIGNATURE-----
+
+Signatures:
+
+Chris, sign here
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+As the leader of Group 4, I, Christopher Bury, affirm and agree with the
+contents of the license written by my fellow group member Dalton Herrewynen.
+
+Christopher Bury
+
+Signed on Nov 30 2023
+protected by key: 68F1 BF46 693C 5054 DB1D  BE02 EF3E 498E A325 A963
+
+Signature considered valid only if file is unaltered and keys are secure.
+
+Phrase must match the phrase at bottom of file, above the integrity signature
+Phrase: {Swam Rent Credit Optic Mars This}
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQRo8b9GaTxQVNsdvgLvPkmOoyWpYwUCZWktmwAKCRDvPkmOoyWp
+Y9uQAP4uJSNGRht9Yqb5jjz9REA/XM5OuqbvCVaZbN2TlHOMTgEAoQk9pO1llrSL
+9y9amE2gOc7wDlL90VIqvbjMKtk31AY=
+=SjoF
+-----END PGP SIGNATURE-----
+
+Dalton, sign here
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Dalton Andre Herrewynen
+
+Signed on Nov 30 2023
+Protected by Key: 4286 416E BE05 D2BC 8AB7  779E A259 1A04 9940 2316
+
+Signature considered valid only if file is unaltered and keys are secure.
+
+Phrase must match the phrase at bottom of file, above the integrity signature
+Phrase: {Swam Rent Credit Optic Mars This}
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQSGQFME1FfMhiuohqKZOAl4Ij9XsQUCZWkuGgAKCRCZOAl4Ij9X
+sXHiAQC+zeK+FZoTkbdGq4L/yoOInpBQtLVAbYmoBaRvR1xLpQD/fnhvL1qARd3v
+J/CmI39heyK9aEgb7xwJu4Ku/ySYQQQ=
+=nnB2
+-----END PGP SIGNATURE-----
+
